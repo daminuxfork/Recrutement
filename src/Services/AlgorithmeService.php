@@ -20,13 +20,14 @@ class AlgorithmeService
         }
     }
 
-    public function algoSecond()
+     public function algoSecond()
     {
-        $array = [];
-        for($i = 0; $i < 10; $i++ ){
-            $array[] = $i;
-        }
 
-        return $array;
+        $longueur = strlen('TROPFACILE');
+
+        for ($i = ($longueur - $longueur); $i <= $longueur; $i++)
+            $resultat[$i] = $i;
+
+        return $resultat;
     }
 }
