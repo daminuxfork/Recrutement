@@ -38,7 +38,7 @@ class ProductEntityTest extends TestCase
     public function testProductEntity(): void
     {
         if (!class_exists(Product::class)) {
-            $this->fail('L\'entité Product n\'existe pas ou n\'est pas dans le namespace App\EntityProduct');
+            $this->fail('L\'entité ProductController n\'existe pas ou n\'est pas dans le namespace App\EntityProduct');
         }
 
         $productClass = new ReflectionClass(Product::class);
@@ -53,7 +53,7 @@ class ProductEntityTest extends TestCase
         }
 
         if (!file_exists(__DIR__ . '/../../src/Repository/ProductRepository.php')) {
-            $this->fail('L\'entité Product n\'a pas de repository dans src/Repository');
+            $this->fail('L\'entité ProductController n\'a pas de repository dans src/Repository');
         }
 
         $this->assertTrue(true);
